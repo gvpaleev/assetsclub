@@ -6,15 +6,32 @@ class AuthenticationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Center(child: Text('Assets Club'))),
-      body: Center(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(onPressed: () {}, child: const Text('Log in')),
-          ElevatedButton(onPressed: () {}, child: const Text('Join the club')),
-        ],
-      )),
-    );
+        appBar: AppBar(title: const Center(child: Text('Assets Club'))),
+        body: Container(
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [Text('data')],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [Text('data'), Text('data'), Text('data')],
+                  ),
+                  Column(
+                    children: [Text('data'), Text('data'), Text('data')],
+                  ),
+                  Column(
+                    children: [Text('data'), Text('data'), Text('data')],
+                  ),
+                ],
+              )
+            ],
+          ),
+        ));
   }
 }

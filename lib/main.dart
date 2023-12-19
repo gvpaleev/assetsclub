@@ -1,4 +1,5 @@
 import 'package:assetclub/authentication_screen.dart';
+import 'package:assetclub/authorization_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const AuthenticationScreen(),
+      // home: const AuthorizationScreen(),
     );
   }
 }
