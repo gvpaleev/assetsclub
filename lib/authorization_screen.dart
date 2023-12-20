@@ -11,8 +11,25 @@ class AuthorizationScreen extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          ElevatedButton(onPressed: () {}, child: const Text('Log in')),
-          ElevatedButton(onPressed: () {}, child: const Text('Join the club')),
+          SizedBox(
+              width: 300,
+              height: 40,
+              child: TextButton(
+                  style: TextButton.styleFrom(foregroundColor: Colors.white),
+                  onPressed: () {},
+                  child: const Text('Log in'))),
+          SizedBox(
+            width: 300,
+            height: 40,
+            child: TextButton(
+                style: TextButton.styleFrom(
+                  // backgroundColor: Colors.transparent,
+                  foregroundColor: Colors.white,
+                  // padding: EdgeInsets
+                ),
+                onPressed: () {},
+                child: const Text('Join the club')),
+          ),
         ],
       )),
     );

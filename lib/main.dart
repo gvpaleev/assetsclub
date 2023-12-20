@@ -1,5 +1,6 @@
 import 'package:assetclub/authentication_screen.dart';
 import 'package:assetclub/authorization_screen.dart';
+import 'package:assetclub/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         //     ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 0, 0, 0)),
         useMaterial3: true,
       ),
-      home: const AuthenticationScreen(),
+      home: const HomeScreen(),
+      // home: const AuthenticationScreen(),
       // home: const AuthorizationScreen(),
     );
   }
